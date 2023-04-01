@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- CSS ionly-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+      <!--Fontawasome-->
+      <script src="https://kit.fontawesome.com/6d14535bc7.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="Assets/CSS/styles.css">
+      <title>Panel</title>
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-expand-lg bg-black">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="./index.html">
+               <img src="Assets/Img/Logo.png" alt="Logo Argentina Programa" class="w-100">
+               </a>
+               <ul class="list-group list-group-horizontal">
+                  <li class="list-group-item"><a href="https://www.facebook.com/TamiSorsaburu17/" target="_blank"><i class="fa-brands fa-square-facebook fa-2x text-white"></i></a></li>
+                  <li class="list-group-item"><a href="https://www.linkedin.com/in/tamara-sorsaburu-243184245/" target="_blank"><i class="fa-brands fa-linkedin fa-2x text-white"></i></a></li>
+                  <li class="list-group-item"><a href="https://github.com/TamaraAyelen17" target="_blank"><i class="fa-brands fa-square-github fa-2x text-white"></i></a></li>
+                  <li class="list-group-item">
+                     <!-- Boton que envia a el login-->
+                     <i class="fa-solid fa-user fa-2x text-white"></i></>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <div class="row">
+            <div class="col-xl-2 col-sm-3">
+               <nav class="verticalNav textoNav" id="list-tab" role="tablist">
+                  <ul>
+                     <li class="vertical">
+                        <a class="list-group-item list-group-item-action active" id="list-redes-list" data-bs-toggle="list" href="#list-redes" role="tab" aria-controls="list-redes">
+                        <i class="fa-solid fa-share-nodes"></i> Redes</a>
+                     </li>
+                     <li class="vertical">
+                        <a class="list-group-item list-group-item-action" id="list-banner-list" data-bs-toggle="list" href="#list-banner" role="tab" aria-controls="list-banner">
+                        <i class="fa-regular fa-image"></i> Banner</a>
+                     </li>
+                     <li class="vertical">
+                        <a class="list-group-item list-group-item-action" id="list-info-list" data-bs-toggle="list" href="#list-info" role="tab" aria-controls="list-info">
+                        <i class="fa-solid fa-info"></i> Info</a>
+                     </li>
+                     <li class="vertical">
+                        <a class="list-group-item list-group-item-action" id="list-about-list" data-bs-toggle="list" href="#list-about" role="tab" aria-controls="list-about">
+                        <i class="fa-solid fa-align-justify"></i> Sobre Mi...</a>
+                     </li>
+                     <li class="vertical">
+                        <a class="list-group-item list-group-item-action" id="list-experiencia-list" data-bs-toggle="list" href="#list-experiencia" role="tab" aria-controls="list-experiencia">
+                        <i class="fa-solid fa-briefcase"></i> Experiencia laboral</a>
+                     </li>
+                     <li class="vertical">
+                        <a class="list-group-item list-group-item-action" id="list-educacion-list" data-bs-toggle="list" href="#list-educacion" role="tab" aria-controls="list-educacion">
+                        <i class="fa-solid fa-graduation-cap"></i> Educación</a>
+                     </li>
+                     <li class="vertical">
+                        <a class="list-group-item list-group-item-action" id="list-experiencia-list" data-bs-toggle="list" href="#list-softSkills" role="tab" aria-controls="list-softSkills">
+                        <i class="fa-solid fa-chart-simple"></i> Hard & Soft Skills</a>
+                     </li>
+                     <li class="vertical">
+                        <a class="list-group-item list-group-item-action" id="list-proyectos-list" data-bs-toggle="list" href="#list-proyectos" role="tab" aria-controls="list-proyectos">
+                        <i class="fa-solid fa-laptop-code"></i> Proyectos</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="col-xl-2 col-sm-3 mt-4">
+
+            </div>
+            <div class="col-xl-8 col-sm-3 mt-4">
+               <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="list-redes" role="tabpanel" aria-labelledby="list-redes-list">
+                     <div class="container mx-5 text-white">
+                        <form>
+                           <div class="my-2">
+                              <h3>Redes</h3>
+                              <br>
+                              <label for="facebook" class="form-label">Facebook</label>
+                              <input type="text" class="form-control" id="facebook">
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                              <button type="button" class="btn btn-primary ">Actualizar</button>
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                           </div>
+                           <div class="my-2">
+                              <label for="linkedin" class="form-label">Linkedin</label>
+                              <input type="text" class="form-control" id="linkedin">
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                              <button type="button" class="btn btn-primary">Actualizar</button>
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                           </div>
+                           <div class="my-2">
+                              <label for="github" class="form-label">GitHub</label>
+                              <input type="text" class="form-control" id="github">
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                              <button type="button" class="btn btn-primary">Actualizar</button>
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="list-banner" role="tabpanel" aria-labelledby="list-banner-list">
+                     <div class="container mx-5 text-white">
+                        <form>
+                           <div class="my-2">
+                              <h3>Banner</h3>
+                              <br>
+                              <label for="banner" class="form-label">Banner</label>
+                              <input type="text" class="form-control" id="banner">
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                              <button type="button" class="btn btn-primary ">Actualizar</button>
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="list-info" role="tabpanel" aria-labelledby="list-info-list">
+                     <div class="container mx-5 text-white">
+                        <form>
+                           <div class="my-2">
+                              <h3>Info</h3>
+                              <div class="row g-3 my-2">
+                                 <div class="col">
+                                    <label for="info" class="form-label">Nombre:</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                                 <div class="col">
+                                    <label for="info" class="form-label px-2">Apellido:</label>
+                                    <input type="text" class="form-control">
+                                 </div>
+                              </div>
+                              <div class="my-2">
+                                 <label for="info" class="form-label">Nombre adicional:</label>
+                                 <input type="text" class="form-control" id="info">
+                              </div>
+                              <div>
+                                 <label for="info" class="form-label">Fecha de nacimiento:</label>
+                                 <input type="date" class="form-control" id="info">
+                              </div>
+                              <div class="my-2">
+                                 <label for="info" class="form-label">Número de teléfono:</label>
+                                 <input type="text" class="form-control" id="info">
+                              </div>
+                              <div class="my-2">
+                                 <label for="info" class="form-label">Correo electrónico:</label>
+                                 <input type="text" class="form-control" id="info">
+                              </div>
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                              <button type="button" class="btn btn-primary ">Actualizar</button>
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="list-about" role="tabpanel" aria-labelledby="list-about-list">
+                     <div class="container mx-5 text-white">
+                        <form>
+                           <div class="my-2">
+                              <label for="about" class="form-label">Sobre mi...</label>
+                              <textarea class="form-control" id="about" style="height: 100px"></textarea>
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                              <button type="button" class="btn btn-primary ">Actualizar</button>
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="list-experiencia" role="tabpanel" aria-labelledby="list-experiencia-list">
+                     <div class="container mx-5 text-white">
+                        <form>
+                           <div class="mb-3">
+                              <h3>Experiencia Laboral</h3>
+                              <br>
+                              <label for="formFileSn" class="form-label">Título del puesto</label>
+                              <input class="form-control" form-control-sn id="formFileSn" type="text">
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                              <button type="button" class="btn btn-primary">Actualizar</button>
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                           </div>
+                           <div class="mb-3">
+                              <label for="formFileSn" class="form-label">Empresa</label>
+                              <input class="form-control" form-control-sn id="formFileSn" type="text">
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                              <button type="button" class="btn btn-primary">Actualizar</button>
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                           </div>
+                           <div class="mb-3">
+                              <label for="formFileSn" class="form-label">Periodo</label>
+                              <input class="form-control" form-control-sn id="formFileSn" type="text">
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                              <button type="button" class="btn btn-primary">Actualizar</button>
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                           </div>
+                           <div class="mb-3">
+                              <label for="formFileSn" class="form-label">Descripción del puesto</label>
+                              <textarea class="form-control" form-control-sn id="formFileSn" type="text"></textarea>
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                              <button type="button" class="btn btn-primary">Actualizar</button>
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="list-educacion" role="tabpanel" aria-labelledby="list-educacion-list">
+                     <div class="container mx-5 text-white">
+                        <form>
+                           <div class="my-2">
+                              <h3>Educación</h3>
+                              <br>
+                              <label for="educacion" class="form-label">Institución educativa</label>
+                              <input type="text" class="form-control" id="educacion">
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                              <button type="button" class="btn btn-primary ">Actualizar</button>
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                           </div>
+                           <div class="my-2">
+                              <label for="educacion" class="form-label">Título</label>
+                              <input type="text" class="form-control" id="educacion">
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                              <button type="button" class="btn btn-primary">Actualizar</button>
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                           </div>
+                           <div class="my-2">
+                              <div class="row g-3 my-2">
+                                 <div class="col">
+                                    <label for="info" class="form-label">Fecha de inicio</label>
+                                    <select class="form-select" id="educacion">
+                                       <option value>Mes</option>
+                                       <option value="1">Enero</option>
+                                       <option value="2">Febrero</option>
+                                       <option value="3">Marzo</option>
+                                       <option value="4">Abril</option>
+                                       <option value="5">Mayo</option>
+                                       <option value="6">Junio</option>
+                                       <option value="7">Julio</option>
+                                       <option value="8">Agosto</option>
+                                       <option value="9">Septiembre</option>
+                                       <option value="10">Octubre</option>
+                                       <option value="11">Noviembre</option>
+                                       <option value="12">Diciembre</option>
+                                    </select>
+                                 </div>
+                                 <div class="col">
+                                    <select class="form-select bajarAño" data-test-year-select id="educacion" name="year">
+                                       <option value="">Año</option>
+                                       <option value="2023">2023</option>
+                                       <option value="2022">2022</option>
+                                       <option value="2021">2021</option>
+                                       <option value="2020">2020</option>
+                                       <option value="2019">2019</option>
+                                       <option value="2018">2018</option>
+                                       <option value="2017">2017</option>
+                                       <option value="2016">2016</option>
+                                       <option value="2015">2015</option>
+                                       <option value="2014">2014</option>
+                                       <option value="2013">2013</option>
+                                       <option value="2012">2012</option>
+                                       <option value="2011">2011</option>
+                                       <option value="2010">2010</option>
+                                       <option value="2009">2009</option>
+                                       <option value="2008">2008</option>
+                                       <option value="2007">2007</option>
+                                       <option value="2006">2006</option>
+                                       <option value="2005">2005</option>
+                                       <option value="2004">2004</option>
+                                       <option value="2003">2003</option>
+                                       <option value="2002">2002</option>
+                                       <option value="2001">2001</option>
+                                       <option value="2000">2000</option>
+                                       <option value="1999">1999</option>
+                                       <option value="1998">1998</option>
+                                       <option value="1997">1997</option>
+                                       <option value="1996">1996</option>
+                                       <option value="1995">1995</option>
+                                       <option value="1994">1994</option>
+                                       <option value="1993">1993</option>
+                                       <option value="1992">1992</option>
+                                       <option value="1991">1991</option>
+                                       <option value="1990">1990</option>
+                                       <option value="1989">1989</option>
+                                       <option value="1988">1988</option>
+                                       <option value="1987">1987</option>
+                                       <option value="1986">1986</option>
+                                       <option value="1985">1985</option>
+                                       <option value="1984">1984</option>
+                                       <option value="1983">1983</option>
+                                       <option value="1982">1982</option>
+                                       <option value="1981">1981</option>
+                                       <option value="1980">1980</option>
+                                       <option value="1979">1979</option>
+                                       <option value="1978">1978</option>
+                                       <option value="1977">1977</option>
+                                       <option value="1976">1976</option>
+                                       <option value="1975">1975</option>
+                                       <option value="1974">1974</option>
+                                       <option value="1973">1973</option>
+                                       <option value="1972">1972</option>
+                                       <option value="1971">1971</option>
+                                       <option value="1970">1970</option>
+                                       <option value="1969">1969</option>
+                                       <option value="1968">1968</option>
+                                       <option value="1967">1967</option>
+                                       <option value="1966">1966</option>
+                                       <option value="1965">1965</option>
+                                       <option value="1964">1964</option>
+                                       <option value="1963">1963</option>
+                                       <option value="1962">1962</option>
+                                       <option value="1961">1961</option>
+                                       <option value="1960">1960</option>
+                                       <option value="1959">1959</option>
+                                       <option value="1958">1958</option>
+                                       <option value="1957">1957</option>
+                                       <option value="1956">1956</option>
+                                       <option value="1955">1955</option>
+                                       <option value="1954">1954</option>
+                                       <option value="1953">1953</option>
+                                       <option value="1952">1952</option>
+                                       <option value="1951">1951</option>
+                                       <option value="1950">1950</option>
+                                       <option value="1949">1949</option>
+                                       <option value="1948">1948</option>
+                                       <option value="1947">1947</option>
+                                       <option value="1946">1946</option>
+                                       <option value="1945">1945</option>
+                                       <option value="1944">1944</option>
+                                       <option value="1943">1943</option>
+                                       <option value="1942">1942</option>
+                                       <option value="1941">1941</option>
+                                       <option value="1940">1940</option>
+                                       <option value="1939">1939</option>
+                                       <option value="1938">1938</option>
+                                       <option value="1937">1937</option>
+                                       <option value="1936">1936</option>
+                                       <option value="1935">1935</option>
+                                       <option value="1934">1934</option>
+                                       <option value="1933">1933</option>
+                                       <option value="1932">1932</option>
+                                       <option value="1931">1931</option>
+                                       <option value="1930">1930</option>
+                                       <option value="1929">1929</option>
+                                       <option value="1928">1928</option>
+                                       <option value="1927">1927</option>
+                                       <option value="1926">1926</option>
+                                       <option value="1925">1925</option>
+                                       <option value="1924">1924</option>
+                                       <option value="1923">1923</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="my-2">
+                              <div class="row g-3 my-2">
+                                 <div class="col">
+                                    <label for="info" class="form-label">Fecha de finalización (o fecha prevista)</label>
+                                    <select class="form-select" id="educacion">
+                                       <option value>Mes</option>
+                                       <option value="1">Enero</option>
+                                       <option value="2">Febrero</option>
+                                       <option value="3">Marzo</option>
+                                       <option value="4">Abril</option>
+                                       <option value="5">Mayo</option>
+                                       <option value="6">Junio</option>
+                                       <option value="7">Julio</option>
+                                       <option value="8">Agosto</option>
+                                       <option value="9">Septiembre</option>
+                                       <option value="10">Octubre</option>
+                                       <option value="11">Noviembre</option>
+                                       <option value="12">Diciembre</option>
+                                    </select>
+                                 </div>
+                                 <div class="col">
+                                    <select class="form-select bajarAño" data-test-year-select id="educacion" name="year">
+                                       <option value="">Año</option>
+                                       <option value="2023">2023</option>
+                                       <option value="2022">2022</option>
+                                       <option value="2021">2021</option>
+                                       <option value="2020">2020</option>
+                                       <option value="2019">2019</option>
+                                       <option value="2018">2018</option>
+                                       <option value="2017">2017</option>
+                                       <option value="2016">2016</option>
+                                       <option value="2015">2015</option>
+                                       <option value="2014">2014</option>
+                                       <option value="2013">2013</option>
+                                       <option value="2012">2012</option>
+                                       <option value="2011">2011</option>
+                                       <option value="2010">2010</option>
+                                       <option value="2009">2009</option>
+                                       <option value="2008">2008</option>
+                                       <option value="2007">2007</option>
+                                       <option value="2006">2006</option>
+                                       <option value="2005">2005</option>
+                                       <option value="2004">2004</option>
+                                       <option value="2003">2003</option>
+                                       <option value="2002">2002</option>
+                                       <option value="2001">2001</option>
+                                       <option value="2000">2000</option>
+                                       <option value="1999">1999</option>
+                                       <option value="1998">1998</option>
+                                       <option value="1997">1997</option>
+                                       <option value="1996">1996</option>
+                                       <option value="1995">1995</option>
+                                       <option value="1994">1994</option>
+                                       <option value="1993">1993</option>
+                                       <option value="1992">1992</option>
+                                       <option value="1991">1991</option>
+                                       <option value="1990">1990</option>
+                                       <option value="1989">1989</option>
+                                       <option value="1988">1988</option>
+                                       <option value="1987">1987</option>
+                                       <option value="1986">1986</option>
+                                       <option value="1985">1985</option>
+                                       <option value="1984">1984</option>
+                                       <option value="1983">1983</option>
+                                       <option value="1982">1982</option>
+                                       <option value="1981">1981</option>
+                                       <option value="1980">1980</option>
+                                       <option value="1979">1979</option>
+                                       <option value="1978">1978</option>
+                                       <option value="1977">1977</option>
+                                       <option value="1976">1976</option>
+                                       <option value="1975">1975</option>
+                                       <option value="1974">1974</option>
+                                       <option value="1973">1973</option>
+                                       <option value="1972">1972</option>
+                                       <option value="1971">1971</option>
+                                       <option value="1970">1970</option>
+                                       <option value="1969">1969</option>
+                                       <option value="1968">1968</option>
+                                       <option value="1967">1967</option>
+                                       <option value="1966">1966</option>
+                                       <option value="1965">1965</option>
+                                       <option value="1964">1964</option>
+                                       <option value="1963">1963</option>
+                                       <option value="1962">1962</option>
+                                       <option value="1961">1961</option>
+                                       <option value="1960">1960</option>
+                                       <option value="1959">1959</option>
+                                       <option value="1958">1958</option>
+                                       <option value="1957">1957</option>
+                                       <option value="1956">1956</option>
+                                       <option value="1955">1955</option>
+                                       <option value="1954">1954</option>
+                                       <option value="1953">1953</option>
+                                       <option value="1952">1952</option>
+                                       <option value="1951">1951</option>
+                                       <option value="1950">1950</option>
+                                       <option value="1949">1949</option>
+                                       <option value="1948">1948</option>
+                                       <option value="1947">1947</option>
+                                       <option value="1946">1946</option>
+                                       <option value="1945">1945</option>
+                                       <option value="1944">1944</option>
+                                       <option value="1943">1943</option>
+                                       <option value="1942">1942</option>
+                                       <option value="1941">1941</option>
+                                       <option value="1940">1940</option>
+                                       <option value="1939">1939</option>
+                                       <option value="1938">1938</option>
+                                       <option value="1937">1937</option>
+                                       <option value="1936">1936</option>
+                                       <option value="1935">1935</option>
+                                       <option value="1934">1934</option>
+                                       <option value="1933">1933</option>
+                                       <option value="1932">1932</option>
+                                       <option value="1931">1931</option>
+                                       <option value="1930">1930</option>
+                                       <option value="1929">1929</option>
+                                       <option value="1928">1928</option>
+                                       <option value="1927">1927</option>
+                                       <option value="1926">1926</option>
+                                       <option value="1925">1925</option>
+                                       <option value="1924">1924</option>
+                                       <option value="1923">1923</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                              <button type="button" class="btn btn-primary">Actualizar</button>
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <!--Skill 1-->
+                  <div class="tab-pane fade" id="list-softSkills" role="tabpanel" aria-labelledby="list-softSkills-list">
+                     <div class="container mx-5 text-white">
+                        <h3>Hard & SoftSkill</h3>
+                        <br>
+                        <form>
+                           <div class="row">
+                              <div class="col-6 my-2">
+                                 <label for="skillUno" class="form-label">Skill</label>
+                                 <input type="text" class="form-control" id="skillUno">
+                              </div>
+                              <div class="col-6 my-2">
+                                 <label for="porcentajeUno" class="form-label">Porcentaje</label>
+                                 <input type="text" class="form-control" id="porcentajeUno">
+                              </div>
+                              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                 <button type="button" class="btn btn-primary ">Actualizar</button>
+                                 <button type="button" class="btn btn-danger">Eliminar</button>
+                                 <button type="button" class="btn btn-success">Guardar</button>
+                              </div>
+                           </div>
+                           <!--Skill 2-->
+                           <div class="row">
+                              <div class="col-6 my-2">
+                                 <label for="skillDos" class="form-label">Skill</label>
+                                 <input type="text" class="form-control" id="skillDos">
+                              </div>
+                              <div class="col-6 my-2">
+                                 <label for="porcentajeDos" class="form-label">Porcentaje</label>
+                                 <input type="text" class="form-control" id="porcentajeDos">
+                              </div>
+                              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                 <button type="button" class="btn btn-primary ">Actualizar</button>
+                                 <button type="button" class="btn btn-danger">Eliminar</button>
+                                 <button type="button" class="btn btn-success">Guardar</button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <!--Proyectos-->
+                  <div class="tab-pane fade" id="list-proyectos" role="tabpanel" aria-labelledby="list-proyectos-list">
+                     <div class="container mx-5 text-white">
+                        <form class="panelProyecto">
+                           <div class="my-2">
+                            <div class="pb-5">
+                              <h3>Proyectos</h3>
+                            </div>
+                              <h6>Proyecto 1</h6>
+                              <br>
+                              <label for="proyectoUno" class="form-label">Título</label>
+                              <input type="text" class="form-control" id="proyectoUno">
+                           </div>
+                           <div class="my-2">
+                              <label for="descripciónUno" class="form-label">Descripción</label>
+                              <input type="text" class="form-control" id="descripciónUno" placeholder="Descripción de tu proyecto">
+                           </div>
+                           <div class="my-2">
+                              <label for="urlImagen" class="form-label">URL de imagen</label>
+                              <input type="text" class="form-control" id="urlImagen">
+                           </div>
+                           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                              <button type="button" class="btn btn-primary ">Actualizar</button>
+                              <button type="button" class="btn btn-danger">Eliminar</button>
+                              <button type="button" class="btn btn-success">Guardar</button>
+                           </div>
+                           <div class="row">
+                              <div class="my-2">
+                                 <h6>Proyecto 2</h6>
+                                 <br>
+                                 <label for="proyectoDos" class="form-label">Título</label>
+                                 <input type="text" class="form-control" id="proyectoDos">
+                              </div>
+                              <div class="my-2">
+                                 <label for="descripciónDos" class="form-label">Descripción</label>
+                                 <input type="text" class="form-control" id="descripciónDos" placeholder="Descripción de tu proyecto">
+                              </div>
+                              <div class="my-2">
+                                 <label for="urlImagen" class="form-label">URL de imagen</label>
+                                 <input type="text" class="form-control" id="urlImagen">
+                              </div>
+                              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                 <button type="button" class="btn btn-primary ">Actualizar</button>
+                                 <button type="button" class="btn btn-danger">Eliminar</button>
+                                 <button type="button" class="btn btn-success">Guardar</button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <!--footer-->
+      <footer class="bg-black text-white text-center fs-5">
+         <div>
+            <p>&copy Copyright Tamara Ayelén Sorsaburu - 2022</p>
+         </div>
+      </footer>
+      <!-- JavaScript Bundle with Popper-->    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>        
+   </body>
+</html>
