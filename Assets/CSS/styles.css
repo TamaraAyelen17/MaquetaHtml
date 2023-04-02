@@ -1,25 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-.bg-black {
-    background-color: #000000;
-}
-
+/* EMPIEZAN LAS PARTES DEL INDEX */
 body {
     background-color: #292b2b;
 }
 
-.caja {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../Img/Gradiente\ Verde\ Azul\ Acuarela\ Fondos.jpg);
-    background-color: #292b2b;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: auto;
-    margin-bottom: 2rem;
+a.link {
+    text-decoration: none;
     color: #000000;
-    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.8);
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 10px;
+}
+
+form h2 {
+    border-bottom: 1px solid;
+    padding-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    padding-bottom: 10rem;
+}
+/*Empiezan partes del navbar*/
+.bg-black {
+    background-color: #000000;
 }
 
 .list-group {
@@ -52,10 +54,11 @@ body {
     --bs-text-opacity: 1;
     color: rgb(187, 150, 26) !important;
 }
+/*Terminan partes de la navbar*/
 
-.vertical:hover {
-    --bs-text-opacity: 1;
-    color: rgb(226, 226, 226) !important;
+/*Empiezan partes del banner*/
+.banner {
+    padding-bottom: 6rem;
 }
 
 #banner-index {
@@ -66,45 +69,6 @@ body {
     background-repeat: no-repeat;
     min-height: 40vh;
     z-index: 0;
-}
-
-.banner {
-    padding-bottom: 6rem;
-}
-
-/*Foto perfil*/
-.rounded-circle.w-25 {
-    position: absolute;
-    z-index: 1;
-    background-color: #FFFFFF;
-    height: auto;
-    width: 15rem !important;
-    margin-top: -10rem;
-    margin-left: 2rem;
-    border: 0.125rem solid #124a4e;
-}
-
-section.panel {
-    margin-top: 9 rem;
-}
-
-.agrandar:hover {
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.25);
-}
-
-#panel{
-    margin-top: 10rem;
-    display: flex;
-}
-
-.admin {
-    font-size: 1.5rem;
-}
-
-a.link {
-    text-decoration: none;
-    color: #000000;
 }
 
 .intro {
@@ -121,71 +85,68 @@ h3.intro {
     font-family: 'Dancing Script', cursive;
 }
 
-footer.bg-black{
-    width: 100%;
-    height: 8%;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
+/*Foto perfil*/
+.rounded-circle.w-25 {
+    position: absolute;
+    z-index: 1;
+    background-color: #FFFFFF;
+    height: auto;
+    width: 15rem !important;
+    margin-top: -10rem;
+    margin-left: 2rem;
+    border: 0.125rem solid #124a4e;
 }
+/*Terminan partes del banner*/
 
-footer.footerPanel {
-    width: 100%;
-    height: 8%;
-    padding: 0.5rem;
-    position: fixed;
-    bottom: 0;
-}
-
-p.footerPanel {
-    padding: 1rem;
-}
-
-.login {
-    height: 86vh;
-}
-
-.formLogin{
-    margin-top: 20%;
-}
-
-nav.vertical {
-    float: left;
-    margin-left: 0.5rem;
-    margin-top: 0.5rem;
-
-}
-
-li.vertical {
-    display: block;
-    margin: 0;
-    writing-mode: vertical;
-    padding: 2rem 0;
-    font-size: 1.15rem;
-}
-
-a, a:hover {
-    text-decoration: none;
+/*Empieza seccion presentacion*/
+.caja {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../Img/Gradiente\ Verde\ Azul\ Acuarela\ Fondos.jpg);
+    background-color: #292b2b;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    margin-bottom: 2rem;
     color: #000000;
+    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.8);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
 }
 
-.tab-content {
-    margin-left: -20rem;
+.descripcion {
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
+}
+/*Termina seccion presentacion*/
+
+/*Empieza seccion educacion*/
+.mb-educacion {
+    margin-top: 3rem;
 }
 
-.bajarAño {
-    margin-top: 2rem;
+.img-educacion {
+    margin-left: -3rem;
 }
 
-/*.list-group-item:hover {
-    --bs-text-opacity: 1;
-    color: rgb(187, 150, 26) !important;
-}*/
-
-.main {
-    padding-bottom: 10rem;
+.img-ispc {
+    width: 70%;
+    padding-top: 3rem;
 }
 
+.lista-ispc {
+    padding-top: 6rem;
+}
+
+.mb-certificados {
+    margin-bottom: -5rem;
+}
+
+.certificadoArgProg {
+    padding-bottom: 1rem;
+}
+/*Termina seccion educacion*/
+
+/*Empieza seccion Hard y softSkill*/
 .progress {
     height: 35px;
     width: 85%;
@@ -214,64 +175,47 @@ a, a:hover {
     background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
     background-size: var(--bs-progress-height) var(--bs-progress-height);
 }
+/*Termina seccion Hard y softSkill*/
 
-.img-educacion {
-    margin-left: -3rem;
-}
-
-.img-ispc {
-    width: 70%;
-    padding-top: 3rem;
-}
-
-.lista-ispc {
-    padding-top: 6rem;
-}
-
+/*Empieza seccion proyectos*/
 .card {
     margin-bottom: 1rem;
     background-color: aliceblue;
 }
 
-.descripcion {
-    margin-bottom: 0.5rem;
-    color: #FFFFFF;
-}
-
-.correr{
-    margin-right: 10rem;
-}
-
-.certificadoArgProg {
-    padding-bottom: 1rem;
-}
-
 .card-body {
     color: #000000;
 }
+/*Termina seccion proyectos*/
 
-.mb-certificados {
-    margin-bottom: -5rem;
+/*Empieza partes login del index*/
+footer.bg-black{
+    width: 100%;
+    height: 8%;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
 }
+/*Termina partes login*/
+/* TERMINAN LAS PARTES DEL INDEX */
 
-.mb-educacion {
-    margin-top: 3rem;
-}
-
-.textoNav {
-   color: #00cdff;
-}
-
-.cajaNav {
-    margin-left: -1rem;
-}
-
+/*EMPIEZA LAS PARTES DEL LOGIN*/
 .bodyRegistro, .bodyInicio {
     background: #0f0c29;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Roboto', sans-serif;
 
+}
+
+input.entradaForm {
+    font-size: 18px;
+    padding: 0.625rem 0.625rem 0.625rem 0.313rem;
+    border-bottom: 1px solid #49454567;
+}
+
+.login {
+    height: 86vh;
 }
 
 .formLogin {
@@ -284,32 +228,56 @@ a, a:hover {
     margin-top: 13rem;
 }
 
-input.form-control {
-    font-size: 18px;
-    padding: 0.625rem 0.625rem 0.625rem 0.313rem;
-    border-bottom: 1px solid #49454567;
-}
-
-.barra {
-    position: relative;
-    display: block;
-    width: 100%;
-}
-
 .botonRegistrar, .botonIniciar{
     width: 100%;
 }
+/*TERMINA PARTES DEL LOGIN*/
 
-.formLogin a:hover {
-    text-decoration: underline;
+/*EMPIEZA PARTES DEL PANEL*/
+/*Empieza seccion nav al costado*/
+.textoNav {
+    color: #00cdff;
+ }
+
+ .vertical:hover {
+    --bs-text-opacity: 1;
+    color: rgb(226, 226, 226) !important;
 }
 
-form h2 {
-    border-bottom: 1px solid;
-    padding-bottom: 1rem;
-    font-family: 'Roboto', sans-serif;
+nav.vertical {
+    float: left;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+
 }
 
+li.vertical {
+    display: block;
+    margin: 0;
+    writing-mode: vertical;
+    padding: 2rem 0;
+    font-size: 1.15rem;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+/*Termina seccion nav al costado*/
+
+/*Empieza seccion footer nav*/
 .panel {
     padding-bottom: 8rem;
 }
+/*Termina seccion footer nav*/
+.tab-content {
+    margin-left: -20rem;
+}
+
+.bajarAño {
+    margin-top: 2rem;
+}
+/*TERMINA PARTES DEL PANEL*/
+
+
+
