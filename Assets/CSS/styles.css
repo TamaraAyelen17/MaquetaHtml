@@ -3,6 +3,7 @@
 /* EMPIEZAN LAS PARTES DEL INDEX */
 body {
     background-color: #292b2b;
+    width: 100%;
 }
 
 a.link {
@@ -62,17 +63,19 @@ form h2 {
 }
 
 #banner-index {
-    background-image: url(../Img/banner2.png);
-    background-position: center;
+    background: url(../Img/banner2.png) center center fixed;
+    height: 50vh;
+    position: relative;
     background-size: cover;
-    margin: auto;
-    background-repeat: no-repeat;
-    min-height: 40vh;
-    z-index: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -msn-background-size: cover;
+    width: 100%;
 }
 
 .intro {
-    padding-top: 5%;
+    padding-top: 12rem;
     font-size: 4rem;
 }
 
@@ -83,6 +86,7 @@ h1.intro{
 h3.intro {
     font-size: 2rem;
     font-family: 'Dancing Script', cursive;
+    padding-top: 2rem;
 }
 
 /*Foto perfil*/
@@ -279,5 +283,9 @@ a, a:hover {
 }
 /*TERMINA PARTES DEL PANEL*/
 
-
-
+@media (max-width: 575.98px) {
+    .intro {
+        padding-top: 6rem;
+        font-size: 2rem;
+    }
+} 
